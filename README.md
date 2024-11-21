@@ -92,7 +92,7 @@ x = layers.UpSampling2D((2, 2))(x)
 decoded = layers.Conv2D(1, (3, 3), activation='sigmoid', padding='same')(x)
 
 autoencoder = keras.Model(input_img, decoded)
-print("Name: VARSHA A, Reg No: 21222130118")
+print("Name: V NAVEENKUMAR, Reg No: 21222130068")
 autoencoder.summary()
 
 autoencoder.compile(optimizer='adam', loss='binary_crossentropy')
@@ -105,7 +105,7 @@ history=autoencoder.fit(x_train_noisy, x_train_scaled,
 decoded_imgs = autoencoder.predict(x_test_noisy)
 
 n = 10
-print('Name:VARSHA AJITH  Register Number: 212221230118    ')
+print('Name:V NAVEENKUMAR  Register Number: 212221230068    ')
 plt.figure(figsize=(20, 4))
 for i in range(1, n + 1):
     # Display original
@@ -130,7 +130,7 @@ for i in range(1, n + 1):
     ax.get_yaxis().set_visible(False)
 plt.show()
 
-print("Varsha, 212221230118")
+print("NAVEENKUMAR, 212221230068")
 plt.plot(history.history['loss'], label='Training Loss')
 plt.plot(history.history['val_loss'], label='Validation Loss')
 plt.title('Training and Validation Loss vs Iterations')
@@ -145,13 +145,15 @@ plt.show()
 ## OUTPUT
 
 ### Training Loss, Validation Loss Vs Iteration Plot
+![Screenshot (42)](https://github.com/user-attachments/assets/039c8792-80b9-492a-8eca-31c6097538f0)
 
-![image](https://github.com/user-attachments/assets/b7eb9741-fb29-44cc-b076-8b028fa4ec4d)
+
 
 
 ### Original vs Noisy Vs Reconstructed Image
 
-![image](https://github.com/user-attachments/assets/b9657742-3b83-4d14-b578-ab5dba1f487a)
+![Screenshot (41)](https://github.com/user-attachments/assets/af1b828a-6316-4db7-bea5-f4d366a36b0f)
+
 
 
 
